@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+<!-- Bootstrap container start-->
+<div class="container">
+    <!--Row 1 (with navbar) -->
+    <div class="row">
+        <div class="col-md-12 bg-dark" >
+            <div class="navbar-light">
+                <a class="nicelink" href=index.html>Home</a>
+                <a class="nicelink" href="data.html">Data</a>
+                <a class="nicelink" href="comparison.html">Comparison</a>
+                <div class="dropdown ">
+                    <button class="dropbtn">Plots
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="temp.html" color: black>Temperature</a>
+                        <a href="cloud.html">Cloudiness</a>
+                        <a href="wind.html">Wind Speed</a>
+                        <a href="humid.html">Humidity</a>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!---Row 2-->
+    <div class="row">
+        <div class="col-md-12 bg-light">
+            <h1 class="hk">Comparisons</h1>
+            <hr class="solid">
+        </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="row">
+        <div class="col-md-6 bg-light">
+
+            <a href="temp.html">
+            <img src=images/regression_T_b.png style="width:100%;height:100%px"></td>
+            </a>
+
+        </div>
+        <div class="col-md-6 bg-light">
+
+            <a href="humid.html">
+            <img src=images/regression_H_b.png style="width:100%;height:100%px"></td>
+        </a>
+
+        </div>
+    </div>
+    <!---Row 4-->
+    <div class="row">
+        <div class="col-md-6 bg-light">
+
+            <a href="wind.html">
+            <img src=images/regression_W_b.png style="width:100%;height:100%px"></td>
+            </a>
+
+        </div>
+        <div class="col-md-6 bg-light">
+            <img src=images/regression_C_b.png style="width:100%;height:100%px"></td>
+
+        </div>
+    </div>
+</div>
+        <script src="" async defer></script>
+    </body>
+</html>

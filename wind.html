@@ -45,35 +45,30 @@
          <h1 class="hk">Weather Project</h1>
          <hr class="solid">
          <div class="card">
-             <img src=images/regression_T_b.png style="width:100%;height:100%px">
+             <img src=images/regression_W_b.png style="width:100%;height:100%px">
          </div>
          <div class="card">
             <p style= color:red>
-            β =-0.2651437 <br>
-            α =51.80231959<br>
+            β =0.01579975 <br>
+            α =32.60656248<br>
             </p>
-
             <p>
-                
-                This chart is displaying the relationship between temperature and the distance a city 
-                is from the equator. The regression coefficient is -0.2651437, a negative association.
-                This means that for every one degree increase in latitude a city is from 
-                the equator, the model predicts a 0.2651437 degree fahrenheit decrease in temperature. 
-                
-                In other words, greater distances from the equator are associated with lower temperatures.
-                
-                The relationship between distance from the equator and temperature is well-known.
-                Areas on the globe which get more direct rays from the sun (near the equator) become
-                warmer than areas with less direct rays (near the poles). 
-                
-                There is, however, another interesting pattern here. There might be a second
-                relationship associated with an exteranious variable, as indicated by the cluster of points on this 
-                scatterplot beginning at about 47 degrees latitude and converging with the first regression line at high
-                latitude values. This variable is probably not hemisphere, since we see the same pattern in both
-                northern and southern hemispheres when we isolate that data (see charts to the right for data from 
-                cities in northern and southern hemispheres only.) This second relationship is consistent regardless
-                of the number of times the analysis is run, and since the analysis samples cities randomly,
-                It is unlikely that this pattern in the data is due to chance.
+
+            This chart is displaying the relationship between windspeed (mph) and the distance a city 
+            is from the equator. The regression coefficient is 0.01579975, a positive association.
+            This means that for every one degree increase in latitude a city is from 
+            the equator, the model predicts a 0.01579975 unit increase in windspeed (mph). 
+
+            In other words, greater distances from the equator are associated with higher windspeed (mph).
+
+            While the relationship between windspeed and distance from the equator may appear diproportionately weak, 
+            the variation in windspeed decreases as one gets further to the equator. This may be 
+            because the speed at which any given point on the surface at the earth moves increases 
+            as it's distance to the equator decreases. This is one of the properties of spinning
+            objects: points further from the axis of rotation along the same plane move faster
+            than points nearer to the center. This produces the wind pattern we see here, known as the
+            coriolis effect.
+
             </p>
 
 
@@ -84,9 +79,9 @@
             <hr class="solid">
             <div class = "card">
                 <p>Northern Hemisphere</p>
-                <img src="images/regression_H_n.png"style="width:100%;height:100%px">
+                <img src="images/regression_W_n.png"style="width:100%;height:100%px">
                 <p>Southern Hemisphere</p>
-                <img src="images/regression_H_s.png"style="width:100%;height:100%px">
+                <img src="images/regression_W_s.png"style="width:100%;height:100%px">
 
             </div>
  

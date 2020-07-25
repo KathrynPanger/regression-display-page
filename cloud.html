@@ -45,35 +45,39 @@
          <h1 class="hk">Weather Project</h1>
          <hr class="solid">
          <div class="card">
-             <img src=images/regression_T_b.png style="width:100%;height:100%px">
+             <img src=images/regression_C_b.png style="width:100%;height:100%px">
          </div>
          <div class="card">
             <p style= color:red>
-            β =-0.2651437 <br>
-            α =51.80231959<br>
+            β = -0.04894974 <br>
+            α = 35.422756<br>
             </p>
 
             <p>
                 
-                This chart is displaying the relationship between temperature and the distance a city 
-                is from the equator. The regression coefficient is -0.2651437, a negative association.
+                
+                This chart is displaying the relationship between cloudiness (%) and the distance a city 
+                is from the equator. The regression coefficient is -0.04894974, a negative association.
                 This means that for every one degree increase in latitude a city is from 
-                the equator, the model predicts a 0.2651437 degree fahrenheit decrease in temperature. 
+                the equator, the model predicts a 0.04894974 percent decrease in cloudiness. 
                 
-                In other words, greater distances from the equator are associated with lower temperatures.
+                In other words, greater distances from the equator are associated with lower cloudiness.
                 
-                The relationship between distance from the equator and temperature is well-known.
-                Areas on the globe which get more direct rays from the sun (near the equator) become
-                warmer than areas with less direct rays (near the poles). 
+                The relationship between cloudiness and distance from the equator appears weak or nonexistent.
+                If there is any true substantive relationship between distance from the equator and cloudiness, it is 
+                not easily discernable from this analysis. Breaking down the data by hemisphere does not seem to help 
+                because the direction of the relationship between cloudiness and latitude changes in the southern 
+                hemisphere more than five percent of the time when the analysis is re-run repeatedly.
+                This apparent change in the direction of the relationship might due to the fact that there are less 
+                cities in the southern hemisphere. Smaller samples havehigher levels of variation, so we 
+                shouldn't be surprised to see aparent strong relationships in either direction even when no true substantive relationship exists.
                 
-                There is, however, another interesting pattern here. There might be a second
-                relationship associated with an exteranious variable, as indicated by the cluster of points on this 
-                scatterplot beginning at about 47 degrees latitude and converging with the first regression line at high
-                latitude values. This variable is probably not hemisphere, since we see the same pattern in both
-                northern and southern hemispheres when we isolate that data (see charts to the right for data from 
-                cities in northern and southern hemispheres only.) This second relationship is consistent regardless
-                of the number of times the analysis is run, and since the analysis samples cities randomly,
-                It is unlikely that this pattern in the data is due to chance.
+                
+                
+                
+                
+                
+                
             </p>
 
 
@@ -84,9 +88,9 @@
             <hr class="solid">
             <div class = "card">
                 <p>Northern Hemisphere</p>
-                <img src="images/regression_H_n.png"style="width:100%;height:100%px">
+                <img src="images/regression_C_n.png"style="width:100%;height:100%px">
                 <p>Southern Hemisphere</p>
-                <img src="images/regression_H_s.png"style="width:100%;height:100%px">
+                <img src="images/regression_C_s.png"style="width:100%;height:100%px">
 
             </div>
  
