@@ -13,29 +13,76 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-<!--nav bar container begin-->
-        <div class="container">
-            <div class="row">
-                <div class=col-md-12>
-                    <div class="navbar-light">
-                        <div class="dropdown">
-                            <button class="dropbtn">plots
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Link 1</a>
-                              <a href="#">Link 2</a>
-                              <a href="#">Link 3</a>
-                            </div>
 
-                        
-                          </div>
-                          <a href="#home">comparison</a>
-                          <a href="#home">data</a>
+<!-- Bootstrap container start-->
+<div class="container">
+    <!--Row 1 (with navbar) -->
+    <div class="row">
+        <div class="col-md-12 bg-dark" >
+            <div class="navbar-light">
+                <div class="dropdown ">
+                    <button class="dropbtn">plots
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="temp.html" color: black>Temperature</a>
+                        <a href="cloud.html">Cloudiness</a>
+                        <a href="wind.html">Wind Speed</a>
+                        <a href="humid.html">Humidity</a>
                     </div>
+
+                
+                </div>
+                <a class="nicelink" href="#home">comparison</a>
+                <a class="nicelink" href="#home">data</a>
             </div>
+        </div>    
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="col-md-8 bg-light">
+         <h1 class="hk">Weather Project</h1>
+         <hr class="solid">
+         <div class="card">
+            <p>This project demonstrates a simple relationship between weather and lattitude. Using the OpenWeatherMap API, I pulled data from 500 random cities from around the world.
+                I then creted a series of simple regression analyes to show how each of four factors; maximum temperature, cloudiness, windiness, and humidity; are asscoiated with distance from the equator.
+                Each of these four variabels are separately regressed along distance from the equtor to create four charts. Here I display each chart and discuss plausible 
+                substantive interpretations for the data.
+
+                Note: because these are simple linear regression models, it does not matter which variable is treated as the dependent variable in each individual analysis. In ordr to  therefore 
+                used "distance from the equator" as my x-axis and treated it as the dependent variable, even though substantively it is the independent variable in every analysis. 
+            </p>
+
+         </div>
         </div>
-<!--Nav bar container end-->
+        <div class="col-md-4 bg-light">
+            <h1 class="hk">Visualizations</h1>
+            <hr class="solid">
+                <table class="card">
+                    <tr>
+                        <td>
+                            <img src="images/regression_T_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                        <td>
+                            <img src="images/regression_H_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/regression_W_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                        <td>
+                            <img src="images/regression_C_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                    </tr>
+                </table>
+                <p>Four simple linear regression models</p>
+        </div>
+
+      </div>
+
+</div>
         <script src="" async defer></script>
     </body>
 </html>
