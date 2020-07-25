@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+<!-- Bootstrap container start-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-dark" >
+            <div class="navbar-light">
+                <a class="nicelink" href=index.html>Home</a>
+                <a class="nicelink" href="data.html">Data</a>
+                <a class="nicelink" href="comparison.html">Comparison</a>
+                <div class="dropdown ">
+                    <button class="dropbtn">Plots
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="temp.html" color: black>Temperature</a>
+                        <a href="cloud.html">Cloudiness</a>
+                        <a href="wind.html">Wind Speed</a>
+                        <a href="humid.html">Humidity</a>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="col-md-8 bg-light">
+         <h1 class="hk">Weather Project</h1>
+         <hr class="solid">
+         <div class="card">
+             <img src=images/regression_T_b.png style="width:100%;height:100%px">
+         </div>
+         <div class="card">
+            <p>β =[[-0.2651437]]
+                α =[51.80231959]
+                R^2=0.07423730464454192
+                
+                This chart is displaying the relationship between temperature (f) and the distance a city 
+                is from the equator. The regression coefficient is [[-0.2651437]], a negative association.
+                This means that for every one degree increase in latitude a city is from 
+                the equator, the model predicts a [[0.2651437]] unit decrease in temperature (f). 
+                
+                In other words, greater distances from the equator are associated with lower temperature (f).
+                
+                The relationship between distance from the equator and temperature is well-known.)
+                Areas on the globe which get more direct rays from the sun, near the equator become
+                warmer than areas with less direct rays, near the poles. 
+                
+                There is, however, another interesting pattern here. There might be a second
+                relationship associated with an exteranious variable, as indicated by the cluster of points on this 
+                scatterplot beginning at about 47 degrees latitude and converging with the first regression line at high .
+                latitude values. This variable is probably not hemisphere, since we see the same pattern in both
+                northern and southern hemispheres when we isolate that data (see separate charts below for data from 
+                cities in northern and southern hemispheres only.) This second relationship is consistent regardless
+                of the number of times the analysis is run, and since the analysis samples cities randomly,
+                It is unlikely that this pattern in the data is due to chance.
+            </p>
+
+         </div>
+        </div>
+        <div class="col-md-4 bg-light">
+            <h1 class="hk">Visualizations</h1>
+            <hr class="solid">
+                <table class="card">
+                    <tr>
+                        <td>
+                            <img src="images/regression_T_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                        <td>
+                            <img src="images/regression_H_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/regression_W_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                        <td>
+                            <img src="images/regression_C_b.png" style="width:100%;height:100%px";></a>
+                        </td>
+                    </tr>
+                </table>
+                <p>Four simple linear regression models</p>
+        </div>
+
+      </div>
+
+</div>
+        <script src="" async defer></script>
+    </body>
+</html>
