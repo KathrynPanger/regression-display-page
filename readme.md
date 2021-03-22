@@ -1,7 +1,7 @@
 
 ## Summary:
 
-Code for a webpage to display weather data analysis from the python-api project (https://github.com/KathrynPanger/python-api) 
+Code for a webpage to display weather data analysis from the python-api project (https://github.com/KathrynPanger/python-api). Webpage shows regression analysis of distance from the equator and a number of weather features. 
 
 ## The Files:
 ```
