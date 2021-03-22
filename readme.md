@@ -4,6 +4,7 @@
 Code for a webpage to display weather data analysis from the python-api project (https://github.com/KathrynPanger/python-api) 
 
 ## The Files:
+```
 
 |+--images -> folder of regression plots used in webpage
 |+--static
